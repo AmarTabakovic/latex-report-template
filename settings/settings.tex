@@ -13,6 +13,10 @@
 \usepackage{xcolor}
 \usepackage{url}
 \usepackage{sectsty}
+\usepackage{etoolbox}
+
+% Abstract
+\patchcmd{\abstract}{\null\vfil}{}{}{}
 
 % Graphics and images
 \graphicspath{{./images/}}
@@ -27,7 +31,6 @@
 
 \lstset{aboveskip=20pt,belowskip=20pt}
 
-% Source: https://denbeke.be/blog/programming/syntax-highlighting-in-latex/
 % Source: https://denbeke.be/blog/programming/syntax-highlighting-in-latex/
 \lstset{
   backgroundcolor=\color{white},
